@@ -46,13 +46,14 @@ public class ControladorLogueo extends HttpServlet {
 	    TblUsuariocl2 usuarioEncontrado = logueoDao.BuscarUsuario(cliente);
 
 	    if (usuarioEncontrado != null) {
+	        // La contraseña coincide, redirigir al index
 	        response.sendRedirect("index.jsp");
-	        System.out.println("CREDENCIALES CORRECTAS");
 	    } else {
+	        // La contraseña no coincide, mostrar mensaje de error en consola
 	        System.out.println("Contraseña incorrecta");
-	        response.sendRedirect("Error.jsp");
+	        // O mostrar un mensaje de error en la página
+	        response.getWriter().println("Contraseña incorrecta");
 	    }
-	
 	}
 
 }
