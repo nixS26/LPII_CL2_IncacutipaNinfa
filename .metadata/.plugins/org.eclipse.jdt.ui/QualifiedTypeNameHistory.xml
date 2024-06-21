@@ -10,4 +10,5 @@
 <fullyQualifiedTypeName name="javax.persistence.EntityManager"/>
 <fullyQualifiedTypeName name="Dao.TblLogueoImp"/>
 <fullyQualifiedTypeName name="model.TblUsuariocl2"/>
+<fullyQualifiedTypeName name="javax.persistence.NoResultException"/>
 </qualifiedTypeNameHistroy>
