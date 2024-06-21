@@ -1,0 +1,33 @@
+package Test;
+
+import Dao.TblProductoImp;
+import model.TblProductocl2;
+
+public class TestProducto {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// REALIZAMOS LAS RESPECTIVAS INSTANCIAS
+				TblProductocl2 producto = new TblProductocl2();
+				TblProductoImp crud=new TblProductoImp();
+				//insertamos datos
+				producto.setNombrecl2("Pionjer");
+				producto.setPrecioventacl2(2000);
+				producto.setPreciocompcl2(1500);
+				producto.setEstadocl2("nuevo");
+				producto.setDescripcl2("Funciona con gasolina");
+			
+				//invocamos el metodo registrar...
+				crud.RegistrarProducto(producto);
+				
+				/*List<TblCliente> listado=crud.ListarCliente();
+				//aplicacos un bucle
+				for(TblCliente lis:listado){
+					//imprimir por pantalla
+					System.out.println("codigo "+ lis.getIdcliente()+"\n"+
+					"nombre" + lis.getNombre()+"\n"+
+							"apellido" + lis.getApellido()+"\n"+
+							"dni"+lis.getDni());*/
+	}
+
+}

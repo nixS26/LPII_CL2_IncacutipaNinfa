@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="Interfaces.IProducto"/>
+<fullyQualifiedTypeName name="model.TblProductocl2"/>
+<fullyQualifiedTypeName name="Dao.TblProductoImp"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="Interfaces.Validar"/>
+<fullyQualifiedTypeName name="javax.persistence.EntityManagerFactory"/>
+<fullyQualifiedTypeName name="javax.persistence.Persistence"/>
+<fullyQualifiedTypeName name="javax.persistence.EntityManager"/>
+<fullyQualifiedTypeName name="Dao.TblLogueoImp"/>
+<fullyQualifiedTypeName name="model.TblUsuariocl2"/>
+</qualifiedTypeNameHistroy>

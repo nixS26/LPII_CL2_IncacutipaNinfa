@@ -1,0 +1,38 @@
+package Dao;
+
+import java.util.List;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+import Interfaces.IProducto;
+import model.TblProductocl2;
+
+public class TblProductoImp implements IProducto{
+
+	@Override
+	public void RegistrarProducto(TblProductocl2 producto) {
+		EntityManagerFactory em=Persistence.createEntityManagerFactory("LPII_CL2_IncacutipaNinfa");
+		//gestionar las entidades
+		EntityManager emanager= em.createEntityManager();
+		//inciamos la transaccion
+		emanager.getTransaction().begin();
+		//registramos a la base de datos
+		emanager.persist(producto);
+		//emititmos mensaje por consola
+		System.out.println("Producto Registrado en la base de datos");
+		//confirmamos la transaccion
+		emanager.getTransaction().commit();
+		//cerramos
+		emanager.close();
+		
+	}
+
+	@Override
+	public List<TblProductocl2> ListarProducto() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
